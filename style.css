@@ -1,0 +1,110 @@
+/* Configurações Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    color: #333;
+}
+
+/* Container Principal */
+.download-container {
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Cartão de Download */
+.download-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+/* Efeito de "hover" sutil no cartão */
+.download-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Logo/Ícone */
+.logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    object-fit: contain;
+}
+
+/* Títulos */
+h1 {
+    font-size: 2rem; /* 32px */
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem; /* 16px */
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+/* Botão de Download */
+.download-button {
+    display: inline-block;
+    background-color: #007bff; /* Azul primário */
+    color: #ffffff;
+    font-size: 1.1rem; /* 18px */
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.download-button:hover {
+    background-color: #0056b3; /* Azul mais escuro */
+    transform: scale(1.05);
+}
+
+.download-button:active {
+    transform: scale(0.98);
+}
+
+/* Informações do arquivo (texto pequeno) */
+.file-info {
+    font-size: 0.875rem; /* 14px */
+    color: #888;
+    margin-top: 25px;
+    margin-bottom: 0; /* Remove margem inferior extra */
+}
+
+/* Responsividade para Celular */
+@media (max-width: 600px) {
+    .download-card {
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 1.75rem; /* 28px */
+    }
+
+    p {
+        font-size: 0.9rem; /* 14.4px */
+    }
+
+    .download-button {
+        width: 100%; /* Botão ocupa largura total */
+        font-size: 1rem; /* 16px */
+    }
+}
